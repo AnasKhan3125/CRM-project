@@ -1,7 +1,7 @@
 @extends ( 'layouts.master' )
 
 @section('title')
-    Manage User
+Manage User
 @endsection
 
 @section('main-content')
@@ -25,19 +25,19 @@
             <form>
 
               <div class="row mb-3">
-                  <div class="col col-12 col-md-4">
-                      <input type="text" class="form-control mb-3" id="name" placeholder="Name">
-                      <input type="email" class="form-control mb-3" id="email" placeholder="Email">
-                  </div>
-                  
-                  <div class="col  col-12 col-md-4">
-                      <input type="number" class="form-control mb-3" id="number" placeholder=" Phone ">
-                      <input type="text" class="form-control mb-3" id="department" placeholder="Department">
-                  </div>
+                <div class="col col-12 col-md-4">
+                  <input type="text" class="form-control mb-3" id="name" placeholder="Name">
+                  <input type="email" class="form-control mb-3" id="email" placeholder="Email">
+                </div>
 
-                  <div class="col  col-12 col-md-4">
-                    <input type="text" class="form-control mb-3" id="status" placeholder="Status">
-                    <input type="text" class="form-control mb-3" id="department" placeholder="Department">
+                <div class="col  col-12 col-md-4">
+                  <input type="number" class="form-control mb-3" id="number" placeholder=" Phone ">
+                  <input type="text" class="form-control mb-3" id="department" placeholder="Department">
+                </div>
+
+                <div class="col  col-12 col-md-4">
+                  <input type="text" class="form-control mb-3" id="status" placeholder="Status">
+                  <input type="text" class="form-control mb-3" id="department" placeholder="Department">
                 </div>
 
               </div>
@@ -51,16 +51,16 @@
     </div>
 
     <!--Add Users  End ----------------------------------------------->
-    
+
   </div>
   <!-- / Content -->
 
-  
+
 
 
 </div>
 
 
 
-    
+
 @endsection
