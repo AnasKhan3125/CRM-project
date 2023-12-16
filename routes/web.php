@@ -1,18 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\AdduserController;
+use App\Http\Controllers\Frontend\ManageController;
+use App\Http\Controllers\Frontend\AddprojectController;
+use App\Http\Controllers\Frontend\ManageprojectController;
+use App\Http\Controllers\Frontend\AddclientController;
+use App\Http\Controllers\Frontend\ManageclientController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+// Route::get('/', function () {
+//     return view('home');
+// });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/users', [AdduserController::class, 'index']);
+Route::get('/manageuser', [ManageController::class, 'index']);
+Route::get('/project', [AddprojectController::class,'index']);
+Route::get('/manageproject', [ManageprojectController::class, 'index']);
+Route::get('/client', [AddclientController::class, 'index']);
+Route::get('/manageclient', [ManageclientController::class, 'index']);
