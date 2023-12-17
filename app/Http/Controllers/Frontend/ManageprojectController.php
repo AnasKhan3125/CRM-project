@@ -9,6 +9,6 @@ class ManageprojectController extends Controller
 {
     public function index()
     {
-        return view('manageproject');
+        return view('admin.manageproject');
     }
 }

@@ -9,6 +9,6 @@ class AdduserController extends Controller
 {
     public function index()
     {
-        return view('adduser');
+        return view('admin.adduser');
     }
 }

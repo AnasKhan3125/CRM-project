@@ -9,6 +9,6 @@ class AddclientController extends Controller
 {
     public function index()
     {
-        return view('addclient');
+        return view('admin.addclient');
     }
 }

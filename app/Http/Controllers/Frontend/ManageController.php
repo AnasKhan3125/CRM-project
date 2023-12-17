@@ -9,6 +9,6 @@ class ManageController extends Controller
 {
    public function index()
    {
-    return view('manageuser');
+      return view('admin.manageuser');
    }
 }
